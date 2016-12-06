@@ -1,24 +1,17 @@
 {
-  "name": "udemy",
+  "name": "travel-site",
   "version": "1.0.0",
-  "description": "Second try at Udemy course",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "normalize.css": "^4.1.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/candlecom/udemy-two.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/candlecom/udemy-two/issues"
-  },
-  "homepage": "https://github.com/candlecom/udemy-two#readme",
   "devDependencies": {
+    "autoprefixer": "^6.3.6",
     "gulp": "^3.9.1",
-    "gulp-watch": "^4.3.11",
-    "jquery": "^3.1.1"
+    "gulp-postcss": "^6.1.1",
+    "gulp-watch": "^4.3.5",
+    "postcss-import": "^8.1.2",
+    "postcss-nested": "^1.0.0",
+    "postcss-simple-vars": "^1.2.0"
   }
 }
