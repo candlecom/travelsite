@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var gulp = require('gulp'),
 watch = require('gulp-watch'),
 postcss = require('gulp-postcss'),
@@ -30,3 +31,7 @@ gulp.task('watch', function() {
   });
 
 });
+=======
+require('./gulp/tasks/styles');
+require('./gulp/tasks/watch');
+>>>>>>> f4e2c172f09feced1c8f0b6efb640ea808d1630c

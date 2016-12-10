@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "modules/_large-hero";
 
 
@@ -5,3 +6,15 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #333;
 }
+=======
+@import "normalize.css";
+@import "base/_global";
+@import "base/_variables";
+@import "base/_mixins";
+@import "modules/_large-hero";
+@import "modules/_btn";
+@import "modules/_wrapper";
+@import "modules/_page-section";
+@import "modules/_headline";
+@import "modules/_row";
+>>>>>>> f4e2c172f09feced1c8f0b6efb640ea808d1630c
