@@ -685,8 +685,8 @@ a {
   padding-right: 65px;
 }
 
-.row--gutters-large {
-  margin-right: 100px;
+.row--gutters-large > div {
+  padding-right: 100px;
 }
 
 .row__b-margin-until-medium {
@@ -751,4 +751,14 @@ a {
 
 .section-title__icon {
   margin-right: .5rem;
+}
+
+.feature-item {
+  position: relative;
+  padding-left: 94px;
+}
+
+.feature-item__icon {
+  position: absolute;
+  left: 0;
 }
