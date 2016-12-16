@@ -462,7 +462,7 @@ template {
 
 body {
   font-family: 'Roboto', sans-serif;
-  color:#333;
+  color: #333;
 }
 
 img {
@@ -479,8 +479,13 @@ a {
 }
 
 .large-hero {
+  border-bottom: 10px solid #2f5572;
   position: relative;
 
+}
+
+.large-hero__image {
+  display: block;
 }
 
 .large-hero__text-content {
@@ -496,25 +501,11 @@ a {
 .large-hero__title {
   font-weight: 300;
   color: #2f5572;
-  font-size: 1.8rem;
   margin: 0;
+  font-size: 2.4rem;
 }
 
 @media (min-width: 530px) {
-
-  .large-hero__title {
-    font-size: 2rem;
-  }
-}
-
-@media (min-width: 800px) {
-
-  .large-hero__title {
-    font-size: 3.2rem;
-  }
-}
-
-@media (min-width: 1010px) {
 
   .large-hero__title {
     font-size: 4.8rem;
@@ -524,33 +515,41 @@ a {
 .large-hero__subtitle {
   font-weight: 300;
   color: #2f5572;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   margin: 0;
 }
 
 @media (min-width: 530px) {
 
   .large-hero__subtitle {
-    font-size: 2.9;
+    font-size: 2.9rem;
   }
 }
 
 .large-hero__description {
-  color: #fff;
-  font-size: 1.875rem;
-  font-weight: 400;
+  color: #FFF;
+  font-size: 1.1rem;
+  font-weight: 100;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
-  max-width:  30rem;
+  max-width: 30rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 530px) {
+
+  .large-hero__description {
+    font-size: 1.875rem;
+  }
 }
 
 .btn {
   background-color: #2f5572;
   color: #FFF;
   text-decoration: none;
-  padding: 1.2rem;
+  padding: .75rem 1.2rem;
   display: inline-block;
+
 }
 
 .btn--orange {
@@ -563,18 +562,19 @@ a {
 
 @media (min-width: 530px) {
 
-  .btn {
+  .btn--large {
     font-size: 1.25rem;
   }
 }
 
 .wrapper {
   overflow: hidden;
-  max-width: 1236px;
   padding-left: 18px;
   padding-right: 18px;
+  max-width: 1236px;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 .wrapper--medium {
@@ -594,14 +594,14 @@ a {
   }
 }
 
-.wrapper--no-b-padding-until-large {
+.wrapper--no-padding-until-large {
   padding-left: 0;
   padding-right: 0;
 }
 
 @media (min-width: 1010px) {
 
-  .wrapper--no-b-padding-until-large {
+  .wrapper--no-padding-until-large {
     padding-left: 18px;
     padding-right: 18px;
   }
@@ -625,6 +625,7 @@ a {
 
 .page-section {
   padding: 1.2rem 0;
+
 }
 
 @media (min-width: 800px) {
@@ -700,7 +701,7 @@ a {
 
 @media (min-width: 530px) {
 
-  .headline {
+  .headline--small {
     font-size: 1.875rem;
   }
 }
@@ -712,6 +713,10 @@ a {
 }
 
 .headline--light {
+  font-weight: 100;
+}
+
+.headline strong {
   font-weight: 400;
 }
 
@@ -757,7 +762,7 @@ a {
   padding-right: 100px;
 }
 
-.row--gutters-small  > div {
+.row--gutters-small > div {
   padding-right: 45px;
 }
 
@@ -825,7 +830,7 @@ a {
   }
 }
 
-/*Begin equal height rules*/
+/* Begin Equal Height Rules */
 
 @media (min-width: 800px) {
 
@@ -880,6 +885,7 @@ a {
   font-size: 2.55rem;
   font-weight: 300;
   text-align: center;
+
 }
 
 @media (min-width: 530px) {
@@ -901,7 +907,7 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: .5rem;
+  margin-bottom: .6rem;
 }
 
 @media (min-width: 530px) {
@@ -918,7 +924,7 @@ a {
 
 .feature-item {
   position: relative;
-  padding-bottom: 2.50rem;
+  padding-bottom: 2.5rem;
 }
 
 @media (min-width: 530px) {
@@ -930,7 +936,7 @@ a {
 
 .feature-item__icon {
   display: block;
-  margin: auto;
+  margin: 0 auto;
 }
 
 @media (min-width: 530px) {
@@ -943,8 +949,8 @@ a {
 
 .feature-item__title {
   font-size: 1.6rem;
-  margin-top: .7em;
   font-weight: 300;
+  margin-top: .7em;
   margin-bottom: .8rem;
   text-align: center;
 }
@@ -952,16 +958,15 @@ a {
 @media (min-width: 530px) {
 
   .feature-item__title {
-    font-size: 1.875rem;
-    margin-top: 1em;
     text-align: left;
+    margin-top: 1em;
+    font-size: 1.875rem;
   }
 }
 
 .testimonial {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, .8);
   padding: 0 18px 1px 18px;
-  border-radius: 25px;
   margin-bottom: 98px;
 }
 
@@ -977,6 +982,17 @@ a {
   margin-bottom: 0;
 }
 
+.testimonial__photo {
+  border-radius: 80px;
+  overflow: hidden;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto -80px auto;
+  position: relative;
+  top: -80px;
+  border: 6px solid rgba(255, 255, 255, .8);
+}
+
 .testimonial__title {
   color: #2f5572;
   text-align: center;
@@ -989,17 +1005,85 @@ a {
   color: #d59541;
   text-align: center;
   font-weight: 400;
-  font-size: 0.9375;
+  font-size: 0.9375rem;
   margin: .25rem 0 1rem 0;
 }
 
-.testimonial__photo {
-  border-radius: 80px;
-  overflow: hidden;
-  width: 160px;
-  height: 160px;
-  margin: 0 auto -80px auto;
-  position: relative;
-  top: -80px;
-  border: 6px solid rgba(255, 255, 255, 0.9);
-}
+/*Don't edit modules/_sprite directly as it is generated automatically by gulp.
+ Instead, edit gulp/templates/sprite*/
+
+.icon {
+    background-image: url('/assets/images/sprites/svg/sprite-0f9283b3.svg');
+  }
+
+.icon--clear-view-escapes {
+    width: 142.4px;
+    height: 59.53px;
+    background-position: 0 0;
+  }
+
+.icon--comment {
+    width: 64px;
+    height: 64px;
+    background-position: 99.70443349753694% 0;
+  }
+
+.icon--facebook {
+    width: 21.23px;
+    height: 42.01px;
+    background-position: 26.040607071652357% 45.795830448496034%;
+  }
+
+.icon--fire {
+    width: 56px;
+    height: 64px;
+    background-position: 0 99.56481481481481%;
+  }
+
+.icon--globe {
+    width: 64px;
+    height: 64px;
+    background-position: 27.586206896551722% 99.56481481481481%;
+  }
+
+.icon--instagram {
+    width: 42.01px;
+    height: 42.01px;
+    background-position: 63.2917018534157% 49.234556504346486%;
+  }
+
+.icon--mail {
+    width: 64px;
+    height: 48px;
+    background-position: 0 48.00806451612903%;
+  }
+
+.icon--rain {
+    width: 64px;
+    height: 64px;
+    background-position: 99.70443349753694% 59.25925925925926%;
+  }
+
+.icon--star {
+    width: 64px;
+    height: 64px;
+    background-position: 59.11330049261084% 99.56481481481481%;
+  }
+
+.icon--twitter {
+    width: 51.78px;
+    height: 42.06px;
+    background-position: 94.04330452560171% 98.50700323226104%;
+  }
+
+.icon--wifi {
+    width: 60px;
+    height: 64px;
+    background-position: 68.79227053140097% 0;
+  }
+
+.icon--youtube {
+    width: 34.75px;
+    height: 42px;
+    background-position: 36.69752421959096% 45.792307692307695%;
+  }
