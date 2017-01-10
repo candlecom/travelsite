@@ -42,4 +42,4 @@ gulp.task('endClean', ['copySpriteGraphic', 'copySpriteCSS'], function() {
   return del('./app/temp/sprite');
 });
 
-gulp.task('icons', ['beginClean', 'createSprite', 'copySpriteGraphic', 'copySpriteCSS']);
+gulp.task('icons', ['beginClean', 'createSprite', 'copySpriteGraphic', 'copySpriteCSS', 'endClean']);
